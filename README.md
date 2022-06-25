@@ -20,10 +20,10 @@
 
 
 
-![image-20220625094257531](https://github.com/eric0207/network-traffic/images/pipeline.png)
+![image-20220625094257531](https://github.com/eric0207/network-traffic/blob/main/images/pipeline.png)
 
 ### 一维CNN模型的架构
 
 
 
-![image-20220625095041497](https://github.com/eric0207/network-traffic/images/net.png)
+![image-20220625095041497](https://github.com/eric0207/network-traffic/blob/main/images/net.png)
