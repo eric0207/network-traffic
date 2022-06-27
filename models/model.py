@@ -56,12 +56,7 @@ class CnnModel(BaseModel):
             nn.ReLU(),
             nn.MaxPool1d(kernel_size=2, stride=1),
             nn.Dropout(0.2),
-            nn.Flatten(),
-            nn.Linear(16, 8),
-            nn.ReLU(),
-            nn.Linear(8, classes),
-            nn.ReLU(),
-            nn.Softmax(classes)
+            nn.Flatten()
         )
 
     def forward(self, x):
@@ -72,7 +67,8 @@ class CnnModel(BaseModel):
         fc3 = nn.Softmax(self.classes)
         x = nn.ReLU(fc1(x))
         x = nn.ReLU(fc2(x))
-        return fc3(x)
+        y = fc3(x)
+        return y
 
 
 if __name__ == '__main__':
